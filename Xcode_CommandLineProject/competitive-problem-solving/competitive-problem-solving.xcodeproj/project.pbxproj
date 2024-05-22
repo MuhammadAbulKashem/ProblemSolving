@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2617A99D2BFE183A009D25AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2617A99C2BFE183A009D25AB /* main.cpp */; };
-		2617A9A42BFE1A2F009D25AB /* input.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2617A9A32BFE19D1009D25AB /* input.txt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		26E3ADE82BFE2D360021E3EA /* input.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2617A9A32BFE19D1009D25AB /* input.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2617A9972BFE183A009D25AB /* CopyFiles */ = {
+		26E3ADE72BFE2D260021E3EA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
-				2617A9A42BFE1A2F009D25AB /* input.txt in CopyFiles */,
+				26E3ADE82BFE2D360021E3EA /* input.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -75,7 +75,7 @@
 			buildPhases = (
 				2617A9952BFE183A009D25AB /* Sources */,
 				2617A9962BFE183A009D25AB /* Frameworks */,
-				2617A9972BFE183A009D25AB /* CopyFiles */,
+				26E3ADE72BFE2D260021E3EA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -271,7 +271,7 @@
 				2617A99F2BFE183A009D25AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2617A9A02BFE183A009D25AB /* Build configuration list for PBXNativeTarget "competitive-problem-solving" */ = {
 			isa = XCConfigurationList;
@@ -280,7 +280,7 @@
 				2617A9A22BFE183A009D25AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
