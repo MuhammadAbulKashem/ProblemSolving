@@ -46,7 +46,6 @@ FILE* getInputFileFromRoot(string root) {
         inputPath[i]=inputFilePath[i];
     }
     inputPath[inputFilePath.size()]='\0';
-    cout<<inputPath<<endl;
     FILE *fp = fopen(inputPath,"r");
     return fp;
     
@@ -65,8 +64,6 @@ FILE* getOutputFileForRoot(string root) {
         outputPath[i]=outputFilePath[i];
     }
     outputPath[outputFilePath.size()]='\0';
-    
-    cout<<outputPath<<endl;
     
     FILE *wr = fopen(outputPath,"w");
     
@@ -90,6 +87,8 @@ int main() {
     if(read==nullptr || write == nullptr){
         return 0;
     }
+    
+    cout<<"No error";
     
     int n;
     while(fscanf(read, "%d",&n)==1){
