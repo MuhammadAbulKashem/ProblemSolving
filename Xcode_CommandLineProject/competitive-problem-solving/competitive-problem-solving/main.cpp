@@ -40,6 +40,7 @@ FILE* getInputFileFromRoot(string root) {
         inputFilePath = input;
     }
     
+    
     char inputPath[inputFilePath.size()+1];
     
     for(int i=0;i<inputFilePath.size();i++){
