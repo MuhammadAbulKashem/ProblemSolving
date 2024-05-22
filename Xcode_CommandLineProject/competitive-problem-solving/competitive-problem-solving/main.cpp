@@ -7,16 +7,15 @@
 
 #include <iostream>
 #include <cstdio>
-#include <vector>
+//#include <vector>
 #include <unistd.h>
-#include <queue>
+//#include <queue>
 
 
-#define N 1000
-#define ll long long
+//#define N 1000
+//#define ll long long
 #define input "input.txt"
 #define output "output.txt"
-
 
 using namespace std;
 
@@ -47,6 +46,7 @@ FILE* getInputFileFromRoot(string root) {
         inputPath[i]=inputFilePath[i];
     }
     inputPath[inputFilePath.size()]='\0';
+    
     FILE *fp = fopen(inputPath,"r");
     return fp;
     
@@ -79,17 +79,13 @@ void closeFileReadWrite(FILE *read, FILE *write) {
 
 int main() {
     string rootPath;
-    rootPath = getRootDirecoty();
+    //rootPath = getRootDirecoty();
     FILE *read = getInputFileFromRoot(rootPath);
     FILE *write = getOutputFileForRoot(rootPath);
-    
-    cout<<rootPath<<endl;
     
     if(read==nullptr || write == nullptr){
         return 0;
     }
-    
-    cout<<"No error";
     
     int n;
     while(fscanf(read, "%d",&n)==1){
