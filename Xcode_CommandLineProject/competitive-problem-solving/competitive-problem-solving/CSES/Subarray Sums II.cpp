@@ -5,10 +5,13 @@
 //  Created by Md. Abul Kashem on 22/5/24.
 //
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <iostream>
+#include <unordered_map>
 
 #define ll long long
+#define input "input.txt"
+//#define output "output.txt"
 
 using namespace std;
 
@@ -16,38 +19,36 @@ using namespace std;
 
 int main() {
     ll n,m;
-    ll val,req,count;
+    ll val,count;
+    //FILE *read = fopen(input,"r");
     
     while(scanf("%lld %lld",&n, &m)==2){
-        vector<ll> subArray;
+        ll carry = 0;
         count = 0;
         unordered_map<ll, ll>myMap;
-        myMap[0]=1;
         for(int i=0;i<n;i++){
             scanf("%lld",&val);
-            if(i==0){
-                subArray.push_back(val);
-                if(val!=0)
-                myMap[subArray[subArray.size()-1]]++;
+            carry+= val;
+            if(carry>=m){
+                if(carry == m){
+                    count++;
+                    count += myMap[0];
+                } else {
+                    val = carry - m;
+                    count += myMap[val];
+                }
             } else {
-                subArray.push_back(val+subArray[subArray.size()-1]);
-                myMap[subArray[subArray.size()-1]]++;
+                val = carry - m;
+                count += myMap[val];
             }
             
-            if(subArray[subArray.size()-1]>=m){
-                req = subArray[subArray.size()-1] - m;
-                if(myMap[req]){
-                    cout<<myMap[req]<<endl;
-                    count += myMap[req];
-                }
-            }
+            myMap[carry]++;
         }
         printf("%lld\n", count);
     }
-    
 }
 
-/*
+
 5 7
 2 -1 3 5 -2
 */

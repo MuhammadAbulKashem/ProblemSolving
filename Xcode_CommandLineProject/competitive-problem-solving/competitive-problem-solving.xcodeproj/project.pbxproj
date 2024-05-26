@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2617A99D2BFE183A009D25AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2617A99C2BFE183A009D25AB /* main.cpp */; };
+		264E30C12C0325800074DC50 /* Subarray Divisibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C02C0325800074DC50 /* Subarray Divisibility.cpp */; };
 		26E3ADE82BFE2D360021E3EA /* input.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2617A9A32BFE19D1009D25AB /* input.txt */; };
 		26E3ADF02BFE502B0021E3EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E3ADEF2BFE502B0021E3EA /* main.cpp */; };
 		26E3ADF32BFE57600021E3EA /* Subarray Sums II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */; };
@@ -30,6 +31,7 @@
 		2617A9992BFE183A009D25AB /* competitive-problem-solving */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "competitive-problem-solving"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2617A99C2BFE183A009D25AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2617A9A32BFE19D1009D25AB /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		264E30C02C0325800074DC50 /* Subarray Divisibility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Subarray Divisibility.cpp"; sourceTree = "<group>"; };
 		26E3ADEF2BFE502B0021E3EA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Subarray Sums II.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */,
+				264E30C02C0325800074DC50 /* Subarray Divisibility.cpp */,
 			);
 			path = CSES;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264E30C12C0325800074DC50 /* Subarray Divisibility.cpp in Sources */,
 				26E3ADF02BFE502B0021E3EA /* main.cpp in Sources */,
 				2617A99D2BFE183A009D25AB /* main.cpp in Sources */,
 				26E3ADF32BFE57600021E3EA /* Subarray Sums II.cpp in Sources */,
