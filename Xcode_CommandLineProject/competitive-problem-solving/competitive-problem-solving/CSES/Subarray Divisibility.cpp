@@ -4,7 +4,7 @@
 //
 //  Created by Md. Abul Kashem on 26/5/24.
 //
-
+/*
 #include <iostream>
 #include <unordered_map>
 
@@ -47,7 +47,6 @@ int main() {
     }
 }
 
-/*
  5
  3 1 2 7 4
 */
