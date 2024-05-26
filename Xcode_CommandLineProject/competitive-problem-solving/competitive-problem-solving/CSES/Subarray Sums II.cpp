@@ -5,7 +5,7 @@
 //  Created by Md. Abul Kashem on 22/5/24.
 //
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <iostream>
 #include <unordered_map>
 
@@ -46,10 +46,9 @@ int main() {
         }
         printf("%lld\n", count);
     }
-    
 }
 
-/*
+
 5 7
 2 -1 3 5 -2
 */
