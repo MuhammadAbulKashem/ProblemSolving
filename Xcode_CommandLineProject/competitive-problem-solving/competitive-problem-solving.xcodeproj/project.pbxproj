@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2617A99D2BFE183A009D25AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2617A99C2BFE183A009D25AB /* main.cpp */; };
 		264E30C12C0325800074DC50 /* Subarray Divisibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C02C0325800074DC50 /* Subarray Divisibility.cpp */; };
+		264E30C42C0349320074DC50 /* Tower of Hanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C32C0349320074DC50 /* Tower of Hanoi.cpp */; };
+		264E30C62C035A1F0074DC50 /* Number of Ways.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C52C035A1F0074DC50 /* Number of Ways.cpp */; };
+		264E30C82C03727B0074DC50 /* Reach Value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C72C03727B0074DC50 /* Reach Value.cpp */; };
+		264E30CA2C0376620074DC50 /* Knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C92C0376620074DC50 /* Knapsack.cpp */; };
+		264E30CC2C0391870074DC50 /* Apple Division.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30CB2C0391870074DC50 /* Apple Division.cpp */; };
 		26E3ADE82BFE2D360021E3EA /* input.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2617A9A32BFE19D1009D25AB /* input.txt */; };
 		26E3ADF02BFE502B0021E3EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E3ADEF2BFE502B0021E3EA /* main.cpp */; };
 		26E3ADF32BFE57600021E3EA /* Subarray Sums II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */; };
@@ -32,6 +37,11 @@
 		2617A99C2BFE183A009D25AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2617A9A32BFE19D1009D25AB /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		264E30C02C0325800074DC50 /* Subarray Divisibility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Subarray Divisibility.cpp"; sourceTree = "<group>"; };
+		264E30C32C0349320074DC50 /* Tower of Hanoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Tower of Hanoi.cpp"; sourceTree = "<group>"; };
+		264E30C52C035A1F0074DC50 /* Number of Ways.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Number of Ways.cpp"; sourceTree = "<group>"; };
+		264E30C72C03727B0074DC50 /* Reach Value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Reach Value.cpp"; sourceTree = "<group>"; };
+		264E30C92C0376620074DC50 /* Knapsack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Knapsack.cpp; sourceTree = "<group>"; };
+		264E30CB2C0391870074DC50 /* Apple Division.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Apple Division.cpp"; sourceTree = "<group>"; };
 		26E3ADEF2BFE502B0021E3EA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Subarray Sums II.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +76,7 @@
 		2617A99B2BFE183A009D25AB /* competitive-problem-solving */ = {
 			isa = PBXGroup;
 			children = (
+				264E30C22C0348F50074DC50 /* Vjudge */,
 				26E3ADF12BFE57210021E3EA /* CSES */,
 				26E3ADEE2BFE4FEE0021E3EA /* USACO */,
 				26E3ADED2BFE4FD70021E3EA /* LightOj */,
@@ -77,10 +88,20 @@
 			path = "competitive-problem-solving";
 			sourceTree = "<group>";
 		};
+		264E30C22C0348F50074DC50 /* Vjudge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vjudge;
+			sourceTree = "<group>";
+		};
 		26E3ADEB2BFE4FBE0021E3EA /* CodeForces */ = {
 			isa = PBXGroup;
 			children = (
 				26E3ADEF2BFE502B0021E3EA /* main.cpp */,
+				264E30C52C035A1F0074DC50 /* Number of Ways.cpp */,
+				264E30C72C03727B0074DC50 /* Reach Value.cpp */,
+				264E30C92C0376620074DC50 /* Knapsack.cpp */,
 			);
 			path = CodeForces;
 			sourceTree = "<group>";
@@ -111,6 +132,8 @@
 			children = (
 				26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */,
 				264E30C02C0325800074DC50 /* Subarray Divisibility.cpp */,
+				264E30C32C0349320074DC50 /* Tower of Hanoi.cpp */,
+				264E30CB2C0391870074DC50 /* Apple Division.cpp */,
 			);
 			path = CSES;
 			sourceTree = "<group>";
@@ -172,10 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264E30C42C0349320074DC50 /* Tower of Hanoi.cpp in Sources */,
+				264E30CA2C0376620074DC50 /* Knapsack.cpp in Sources */,
 				264E30C12C0325800074DC50 /* Subarray Divisibility.cpp in Sources */,
+				264E30CC2C0391870074DC50 /* Apple Division.cpp in Sources */,
 				26E3ADF02BFE502B0021E3EA /* main.cpp in Sources */,
+				264E30C82C03727B0074DC50 /* Reach Value.cpp in Sources */,
 				2617A99D2BFE183A009D25AB /* main.cpp in Sources */,
 				26E3ADF32BFE57600021E3EA /* Subarray Sums II.cpp in Sources */,
+				264E30C62C035A1F0074DC50 /* Number of Ways.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
