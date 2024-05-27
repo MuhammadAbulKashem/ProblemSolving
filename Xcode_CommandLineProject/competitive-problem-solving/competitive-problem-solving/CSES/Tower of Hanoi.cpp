@@ -5,7 +5,7 @@
 //  Created by Md. Abul Kashem on 26/5/24.
 //
 
-/*#include <iostream>
+#include <iostream>
 #include <unordered_map>
 
 #define ll long long
@@ -22,4 +22,3 @@ int main() {
         printf("%lld\n", n);
     }
 }
-*/
