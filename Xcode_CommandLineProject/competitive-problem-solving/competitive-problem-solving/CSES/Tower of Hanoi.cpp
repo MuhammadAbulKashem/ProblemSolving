@@ -14,8 +14,15 @@
 using namespace std;
 
 int main() {
+    
+    
+    
+    
     ll n;
-    ll val,count;
+   // ll val,count;
+    
+    
+    
     
     while(scanf("%lld",&n)==1){
        

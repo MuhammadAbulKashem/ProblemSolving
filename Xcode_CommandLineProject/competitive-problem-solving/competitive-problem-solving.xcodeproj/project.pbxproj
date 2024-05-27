@@ -14,6 +14,7 @@
 		264E30C82C03727B0074DC50 /* Reach Value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C72C03727B0074DC50 /* Reach Value.cpp */; };
 		264E30CA2C0376620074DC50 /* Knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30C92C0376620074DC50 /* Knapsack.cpp */; };
 		264E30CC2C0391870074DC50 /* Apple Division.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 264E30CB2C0391870074DC50 /* Apple Division.cpp */; };
+		26E21D5B2C04EC47005F6F3F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E21D5A2C04EC47005F6F3F /* File.swift */; };
 		26E3ADE82BFE2D360021E3EA /* input.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2617A9A32BFE19D1009D25AB /* input.txt */; };
 		26E3ADF02BFE502B0021E3EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E3ADEF2BFE502B0021E3EA /* main.cpp */; };
 		26E3ADF32BFE57600021E3EA /* Subarray Sums II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */; };
@@ -42,6 +43,7 @@
 		264E30C72C03727B0074DC50 /* Reach Value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Reach Value.cpp"; sourceTree = "<group>"; };
 		264E30C92C0376620074DC50 /* Knapsack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Knapsack.cpp; sourceTree = "<group>"; };
 		264E30CB2C0391870074DC50 /* Apple Division.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Apple Division.cpp"; sourceTree = "<group>"; };
+		26E21D5A2C04EC47005F6F3F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		26E3ADEF2BFE502B0021E3EA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		26E3ADF22BFE57600021E3EA /* Subarray Sums II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Subarray Sums II.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				26E3ADEC2BFE4FCC0021E3EA /* Leetcode */,
 				26E3ADEB2BFE4FBE0021E3EA /* CodeForces */,
 				2617A99C2BFE183A009D25AB /* main.cpp */,
+				26E21D5A2C04EC47005F6F3F /* File.swift */,
 				2617A9A32BFE19D1009D25AB /* input.txt */,
 			);
 			path = "competitive-problem-solving";
@@ -170,6 +173,7 @@
 				TargetAttributes = {
 					2617A9982BFE183A009D25AB = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -194,7 +198,8 @@
 /* Begin PBXShellScriptBuildPhase section */
 		26089F662C045F7400E203CB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -207,7 +212,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n   swiftlint --config \"$SRCROOT/../config/bash_file/.swiftlint.yml\" --fix\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -221,6 +226,7 @@
 				264E30C12C0325800074DC50 /* Subarray Divisibility.cpp in Sources */,
 				264E30CC2C0391870074DC50 /* Apple Division.cpp in Sources */,
 				26E3ADF02BFE502B0021E3EA /* main.cpp in Sources */,
+				26E21D5B2C04EC47005F6F3F /* File.swift in Sources */,
 				264E30C82C03727B0074DC50 /* Reach Value.cpp in Sources */,
 				2617A99D2BFE183A009D25AB /* main.cpp in Sources */,
 				26E3ADF32BFE57600021E3EA /* Subarray Sums II.cpp in Sources */,
@@ -268,7 +274,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -329,7 +335,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -349,18 +355,23 @@
 		2617A9A12BFE183A009D25AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		2617A9A22BFE183A009D25AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
