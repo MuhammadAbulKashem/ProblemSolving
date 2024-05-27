@@ -5,6 +5,7 @@
 //  Created by Md. Abul Kashem on 26/5/24.
 //
 
+/*
 #include <stdio.h>
 #include<iostream>
 #include <vector>
@@ -43,3 +44,4 @@ int main() {
         cout<<answer<<endl;
     }
 }
+*/

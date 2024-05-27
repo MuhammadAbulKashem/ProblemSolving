@@ -5,7 +5,7 @@
 //  Created by Md. Abul Kashem on 26/5/24.
 //
 
-/*#include <iostream>
+#include <iostream>
 #include <unordered_map>
 
 #define ll long long
@@ -14,12 +14,18 @@
 using namespace std;
 
 int main() {
+    
+    
+    
+    
     ll n;
-    ll val,count;
+   // ll val,count;
+    
+    
+    
     
     while(scanf("%lld",&n)==1){
        
         printf("%lld\n", n);
     }
 }
-*/
